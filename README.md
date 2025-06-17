@@ -1,6 +1,6 @@
 # fastx-markdown-editor-playground
 
-FastX Markdown Editor Playground
+[FastX Markdown Editor Playground](https://shenbao.github.io/fastx-markdown-editor-playground/)
 
 
 ## More links
