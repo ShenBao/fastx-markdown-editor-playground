@@ -11,7 +11,7 @@ let count = 1;
 
 const MarkdownEditorPlayground = () => {
   const [visible, setVisible] = useState(true);
-  const [mdstr, setMdstr] = useState<string>(DocumentStrSource);
+  const [mdStr, setMdStr] = useState<string>(DocumentStrSource);
   const [hideToolbar, setHideToolbar] = useState(true);
   const [toolbarBottom, setToolbarBottom] = useState(false);
   const [enableScroll, setEnableScroll] = useState(true);
@@ -25,7 +25,7 @@ const MarkdownEditorPlayground = () => {
         <button
           onClick={() => {
             count += 1;
-            setMdstr(`String ${count}`);
+            setMdStr(`String ${count}`);
           }}
         >
           Modify Markdown
@@ -62,7 +62,7 @@ const MarkdownEditorPlayground = () => {
         <div className="editor-wrapper">
           <MarkdownEditor
             visible={visible}
-            value={mdstr}
+            value={mdStr}
             height={`${window.screen.height - 350}px`}
             enableScroll={enableScroll}
             showToolbar={hideToolbar}
